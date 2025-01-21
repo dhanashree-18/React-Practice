@@ -6,36 +6,13 @@
     <title>Namaste React</title>
     <link rel="stylesheet" href="./index.css"/>
 </head>
+
 <body>
-    <div id="root"></div>
 
-    
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <div id="root">
 
-<script src="./App.js"></script>
+    </div>
+<script type="module" src="./src/App.js"></script>
 
 </body>
 </html>
-
-
-Above the 2 scripts are added which are react CDN links (Content Delivery Network).
-
-1] <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-
-- It's a React core library, contains JS code written by FB developers.
-- This file contains the logic for defining and managing components, hooks and React reconciliation algorithm.
-- Provides APIs for crreating elements (React.createElement) and managing state using useState,useEffect etc.
-- does not deal with the React DOM.
-
-2] <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-- It loads React's DOM library companion to React for web specific rendering.
-- It provides API to render React components like ReactDOM.createRoot.
-- manages the updates to the DOM based on the changes made to props and state within components.
-- Targets the browser environment (DOM rendering).
-
-React: Handles the logic and structure of your application.
-
-ReactDOM: Focuses on rendering that logic and structure to the DOM in the browser. 
-Both are essential for building and rendering React applications in a web environment.
